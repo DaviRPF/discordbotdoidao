@@ -15,7 +15,7 @@ Seu nome é "Bot Doidão".
 
 export async function chat(userId: string, userMessage: string): Promise<string> {
   try {
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
 
     let history = conversationHistory.get(userId) || [];
 
