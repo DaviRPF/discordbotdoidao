@@ -1,0 +1,42 @@
+{
+  "name": "discord-bot-doidao",
+  "version": "1.0.0",
+  "description": "Bot Discord com IA Gemini que entra em voice chat e conversa com usuários",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "deploy-commands": "ts-node src/deploy-commands.ts"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "voice",
+    "ai",
+    "gemini",
+    "google",
+    "tts"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/opus": "^0.9.0",
+    "@discordjs/voice": "^0.17.0",
+    "@google/generative-ai": "^0.21.0",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
+    "ffmpeg-static": "^5.2.0",
+    "libsodium-wrappers": "^0.7.13",
+    "prism-media": "^1.3.5",
+    "gtts": "^0.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
